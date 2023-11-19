@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors</title>
+  <style>
+    a[href^="https"] {
+      color: red;
+    }
+    ul:first-of-type li:last-of-type a {
+      background-color: green;
+    }
+    ul + p {
+      font-size: 26px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="https://example1.com">link1</a></li>
+    <li><a href="https://example2.com">link2</a></li>
+    <li><a href="https://example3.com">link3</a></li>
+    <li><a href="http://example4.com">link4</a></li>
+    <li><a href="http://example5.com">link5</a></li>
+    <li><a href="https://example6.com">link6</a></li>
+  </ul>
+  <p>Text 26px.</p>
+</body>
+</html>
